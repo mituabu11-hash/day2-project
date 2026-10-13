@@ -1,0 +1,62 @@
+:root {
+  --green: #2f7d4f;
+  --dark: #1d2b22;
+  --yellow: #f2b705;
+  --paper: #fbf8ef;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background: var(--paper);
+}
+
+/* Header: logo, title and menu in one row, wraps on small screens */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--green);
+  color: white;
+}
+header h1 { margin: 0; flex: 1; font-size: 1.5rem; }
+.logo { width: 56px; height: 56px; }
+
+nav ul { display: flex; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+nav a { color: white; }
+
+main { max-width: 60rem; margin: 0 auto; padding: 1.5rem; }
+
+/* Cards: as many columns as fit, at least 14rem wide each */
+#fruit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+.card {
+  padding: 1rem;
+  background: white;
+  border-left: 6px solid var(--yellow);
+  border-radius: 6px;
+}
+.card h3 { margin-top: 0; }
+
+footer { padding: 1.5rem; text-align: center; }
+
+/* Accessibility: keyboard focus is clearly visible */
+a:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+
+/* Skip link is hidden until you press Tab */
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: white; padding: .5rem; }
+
+/* Responsive: on narrow screens, stack the menu under the title */
+@media (max-width: 600px) {
+  header h1 { flex-basis: 100%; }
+}

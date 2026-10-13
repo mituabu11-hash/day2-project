@@ -1,0 +1,6 @@
+[
+  { "name": "Mango", "description": "Sweet and juicy, the king of summer fruits.", "season": "May to July" },
+  { "name": "Jackfruit", "description": "The national fruit of Bangladesh, huge and fragrant.", "season": "June to August" },
+  { "name": "Lychee", "description": "Small, red outside, white and sweet inside.", "season": "June" },
+  { "name": "Guava", "description": "Crunchy and fresh, nice with a pinch of salt.", "season": "July to October" }
+]

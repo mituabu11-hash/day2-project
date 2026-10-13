@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fruits of Bangladesh</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#fruits">Skip to the fruits</a>
+
+  <header>
+    <!-- SVG: a simple mango drawn with code -->
+    <svg class="logo" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title">
+      <title id="logo-title">A yellow mango with a green leaf</title>
+      <ellipse cx="30" cy="38" rx="20" ry="16" fill="#f2b705"/>
+      <path d="M34 22 C40 8 54 10 54 10 C54 10 50 24 34 22Z" fill="#a8e6a1"/>
+    </svg>
+    <h1>Fruits of Bangladesh</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#fruits">Fruits</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="fruits">
+      <h2>What grows here</h2>
+      <!-- JavaScript puts the fruit cards here, using data/fruits.json -->
+      <div id="fruit-list" aria-live="polite">Loading the fruits…</div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This is my Day 2 practice project for Frontend Development.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with HTML, CSS and JavaScript.</p>
+  </footer>
+</body>
+</html>
